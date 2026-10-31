@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-playfair: 'Cormorant Garamond', Georgia, serif;
+    --font-montserrat: 'Montserrat', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: #FCFAF6;
+    color: #3D322C;
+    font-family: var(--font-montserrat);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-playfair);
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F3EB;
+}
+::-webkit-scrollbar-thumb {
+  background: #DEAFB4;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B86B74;
+}
+
+/* Luxury card and glass effect */
+.glass-nav {
+  background: rgba(252, 250, 246, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.luxury-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(226, 214, 192, 0.5);
+  box-shadow: 0 10px 30px -10px rgba(61, 50, 44, 0.06);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -12px rgba(184, 107, 116, 0.16);
+  border-color: rgba(201, 167, 78, 0.4);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #E3C774 0%, #C9A74E 50%, #A88734 100%);
+}
+
+.rose-gradient {
+  background: linear-gradient(135deg, #DEAFB4 0%, #B86B74 100%);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #C9A74E 0%, #A88734 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
