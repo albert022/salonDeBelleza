@@ -142,21 +142,20 @@ export default function Footer() {
             © {new Date().getFullYear()} {businessConfig.name} SRL. Todos los derechos reservados.
           </p>
 
-          <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-taupe-800/80 border border-taupe-700 text-cream-300">
-            <span className="w-2 h-2 rounded-full bg-gold-400" />
+          <a
+            href={businessConfig.qrmoon.agencyWebsite}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-taupe-800/90 hover:bg-taupe-800 border border-taupe-700 text-cream-300 hover:text-white transition-all shadow-sm group"
+          >
+            <span className="w-2 h-2 rounded-full bg-rose-500 group-hover:scale-125 transition-transform" />
             <span>
-              Sitio web desarrollado por{" "}
-              <a
-                href={businessConfig.qrmoon.agencyWebsite}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-bold text-white hover:text-gold-300 underline underline-offset-2 transition-colors"
-              >
+              Desarrollado por{" "}
+              <strong className="text-white group-hover:text-gold-300 transition-colors">
                 {businessConfig.qrmoon.agencyName}
-              </a>
-              {" "}— Soluciones Digitales
+              </strong>
             </span>
-          </div>
+          </a>
         </div>
       </div>
     </footer>
