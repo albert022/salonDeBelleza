@@ -147,19 +147,19 @@ export default function Hero() {
                   href={businessConfig.googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="absolute bottom-5 left-5 right-5 p-4 rounded-2xl bg-white/90 hover:bg-white backdrop-blur-md border border-white/60 shadow-lg text-taupe-900 transition-all block group"
+                  className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white border border-cream-200 shadow-2xl text-taupe-900 transition-all block group"
                 >
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="text-xs uppercase tracking-wider font-semibold text-rose-600">
+                      <p className="text-xs uppercase tracking-wider font-bold text-rose-600">
                         Espacio de belleza & calma
                       </p>
-                      <p className="text-sm font-bold text-taupe-900 group-hover:text-rose-600 transition-colors flex items-center gap-1">
-                        <MapPin className="w-3.5 h-3.5 text-rose-500" />
+                      <p className="text-sm font-bold text-taupe-900 group-hover:text-rose-600 transition-colors flex items-center gap-1 mt-0.5">
+                        <MapPin className="w-3.5 h-3.5 text-rose-600" />
                         <span>{businessConfig.zone}, {businessConfig.city}</span>
                       </p>
                     </div>
-                    <span className="px-3 py-1 rounded-full text-xs font-semibold bg-gold-400/20 text-gold-700 border border-gold-300">
+                    <span className="px-3 py-1.5 rounded-full text-xs font-bold bg-cream-100 text-taupe-900 border border-cream-300 shadow-sm group-hover:bg-gold-500 group-hover:text-taupe-950 transition-colors">
                       Ver mapa 📍
                     </span>
                   </div>

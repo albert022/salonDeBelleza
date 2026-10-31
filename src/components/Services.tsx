@@ -46,8 +46,8 @@ export default function Services() {
                   <div className="absolute inset-0 bg-gradient-to-t from-taupe-900/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
 
                   {/* Duration pill */}
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium text-taupe-800 flex items-center gap-1.5 shadow-sm">
-                    <Clock className="w-3.5 h-3.5 text-rose-600" />
+                  <div className="absolute top-3.5 right-3.5 bg-taupe-950/85 backdrop-blur-md px-3.5 py-1 rounded-full text-xs font-semibold text-white flex items-center gap-1.5 shadow-md border border-white/20">
+                    <Clock className="w-3.5 h-3.5 text-gold-400" />
                     <span>{service.duration}</span>
                   </div>
                 </div>
